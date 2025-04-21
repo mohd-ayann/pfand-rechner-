@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deutscher Pfand-Rechner</title>
+    <link rel="stylesheet" href="pfand-style.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Pfand-Rechner </h1>
+        <div class="calculator">
+            <div class="input-group">
+                <label for="bottles">Anzahl der Flaschen:</label>
+                <input type="number" id="bottles" min="0" value="0">
+            </div>
+
+            <div class="input-group">
+                <label for="type">Flaschenart:</label>
+                <select id="type">
+                    <option value="0.25">PET-Flasche (0,25€)</option>
+                    <option value="0.15">Mehrweg-Bierflasche (0,15€)</option>
+                    <option value="0.08">Glasflasche (0,08€)</option>
+                </select>
+            </div>
+            
+            <button onClick="calculate()">Berechenen</button>
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="pfand-script.js"></script>
+</body>
+</html>
